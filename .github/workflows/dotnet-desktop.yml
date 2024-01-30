@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        configuration: [Debug, Release]
+        configuration: [Release]
 
     runs-on: windows-latest  # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
@@ -55,5 +55,5 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4.3.0
       with:
-         name: build-artifacts-${{ github.run_id }}-${{ github.run_number }}-${{ matrix.project.target }}
+         name: Celeste64-Win
          path: D:\a\Celeste64\Celeste64\bin\x64\
