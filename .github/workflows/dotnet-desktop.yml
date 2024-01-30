@@ -56,4 +56,4 @@ jobs:
       uses: actions/upload-artifact@v4.3.0
       with:
          name: build-artifacts-${{ github.run_id }}-${{ github.run_number }}-${{ matrix.project.target }}
-         path: D:\a\Celeste64\Celeste64\build\
+         path: D:\a\Celeste64\Celeste64\bin\x64\
